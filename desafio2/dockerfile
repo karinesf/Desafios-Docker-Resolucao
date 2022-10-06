@@ -1,0 +1,17 @@
+FROM redhat/ubi8:8.5
+
+LABEL nome="Karine" email="karineknd2@gmail.com"
+
+ENV PORT=8080
+
+RUN yum install -y httpd 
+
+RUN sed -ri -e "/^Listen 80/c\Listen ${PORT}" /etc/httpd/conf/httpd.conf && \
+    chown -R apache:apache /etc/httpd/logs/ && \
+    chown -R apache:apache /run/httpd/
+
+COPY /src/index.html /var/www/html/
+ 
+EXPOSE $PORT
+
+CMD ["httpd", "-D", "FOREGROUND"]
