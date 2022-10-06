@@ -58,8 +58,7 @@
 5. Apos verificar se o container esta sendo executado corretamente e você conseguiu verificar a mensagem utilizando o seu navegador, para ele e então suba a sua imagem criada para o docker hub.
 
 `docker stop meuapache`
-`docker tag karine/custom-apache karinesf/custom-apache`
-`docker push karinesf/custom-apache`
 
-**OBS** Os arquivos criados para esse desafio se encontram aqui: 
-* [Desafio 2](desafio2/)
+`docker tag karine/custom-apache karinesf/custom-apache`
+
+`docker push karinesf/custom-apache`

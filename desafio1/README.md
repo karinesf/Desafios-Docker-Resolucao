@@ -39,5 +39,3 @@ Para ter certeza que o container esta executando verifique atraves de linha de c
  
 `docker stop httdp-basic`
 
-**OBS** Os arquivos criados para esse desafio se encontram aqui: 
-* [Desafio 1](desafio1/)
